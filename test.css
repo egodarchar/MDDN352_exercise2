@@ -1,0 +1,45 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color: #800000;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0px solid #336699;
+}
+
+.container div{
+    //the child
+    padding: 10px;
+    margin: 2px;
+    border: 0px solid #CC2233;
+    flex: 0 1 10em;
+
+    // item property flex: flex-grow flex-shrink flex-basis;
+}
+
+.boxen{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 480px) {
+    body {
+	background-color: #000125;
+	color: #FFF;
+    }
+    
+ h1 { font-size: 2em; }
+ 
+ul li {
+    display: none;
+}
+
+}
